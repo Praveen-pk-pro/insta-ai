@@ -1,0 +1,4 @@
+instagrapi
+requests
+python-dotenv
+groq  # or openai, whichever you're using
