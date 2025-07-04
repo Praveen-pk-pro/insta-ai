@@ -1,3 +1,4 @@
+from keep_alive import keep_alive
 from instagrapi import Client
 import requests
 import time
@@ -140,3 +141,11 @@ while True:
         print("⚠️ Error in loop:", err)
 
     time.sleep(3)
+
+
+keep_alive()  # Start Flask server in background
+
+# Then your main bot loop
+while True:
+    # Your bot logic
+    time.sleep(60)
